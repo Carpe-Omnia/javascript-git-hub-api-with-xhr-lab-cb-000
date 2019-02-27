@@ -28,6 +28,6 @@ var repoText = "<ul>"
 document.getElementById("repositories").innerHTML = repoText ;
 }
 
-function displayCommits(thing) {
-  console.log(thing) ;
+function displayCommits(el) {
+  console.log(el.dataset.repo) ;
 }
