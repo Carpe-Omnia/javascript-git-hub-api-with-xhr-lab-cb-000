@@ -6,7 +6,7 @@ function getRepositories(e) {
   const repoPath = "https://api.github.com/users/" + e.target.value + "/repos"
   console.log(repoPath) ;
   const req = new XMLHttpRequest();
-  //add the callback trigger here
+  req.addEventListener("load", showRepositories);
   req.open("GET",repoPath) ;
   req.send() ;
 }
