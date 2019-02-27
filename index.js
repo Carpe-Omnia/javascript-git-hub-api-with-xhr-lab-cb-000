@@ -43,7 +43,16 @@ function getCommits(el) {
 function displayCommits() {
   const commits = JSON.parse(this.responseText) ;
   var commitText = "<ul>" ;
-
+  commitText += `${commits
+    .map(
+      commit =>
+        "<li>" +
+        commit.commit.author.name +
+        " - " +
+        commit.commit.message +
+        "</li>"
+    )
+    .join("")}` ; 
   document.getElementById("details").innerHTML = commitText ;
 
 }
