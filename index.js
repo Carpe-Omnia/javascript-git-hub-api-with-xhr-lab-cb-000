@@ -79,10 +79,7 @@ function displayBranches() {
     .map(
       branch =>
         "<li>" +
-        commit.commit.author.name +
-        " - " +
-        commit.author.login  + " - " +
-        commit.commit.message +
+        branch.name
         "</li>"
     )
     .join("")}` ;
