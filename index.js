@@ -39,3 +39,7 @@ function getCommits(el) {
   req.open("GET", "https://api.github.com/repos/" + useName + "/" + name + "/commits");
   req.send();
 }
+
+function displayCommits() {
+  console.log( JSON.parse(this.responseText)) ;
+}
