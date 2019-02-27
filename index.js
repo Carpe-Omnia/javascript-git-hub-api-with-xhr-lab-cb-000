@@ -12,6 +12,7 @@ function getRepositories(e) {
 }
 
 function showRepositories(event, data) {
-console.log(data) ;
-console.log(event) ;
+// console.log(data) ;
+// console.log(event) ;
+
 }
