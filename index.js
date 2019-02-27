@@ -41,5 +41,5 @@ function getCommits(el) {
 }
 
 function displayCommits() {
-  console.log( JSON.parse(this.responseText)) ;
+  console.log( JSON.parse(this.responseText)[0]) ;
 }
