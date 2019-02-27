@@ -52,7 +52,7 @@ function displayCommits() {
         commit.commit.message +
         "</li>"
     )
-    .join("")}` ; 
+    .join("")}` ;
   document.getElementById("details").innerHTML = commitText ;
 
 }
