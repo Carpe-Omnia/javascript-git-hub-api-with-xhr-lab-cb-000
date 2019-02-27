@@ -52,7 +52,8 @@ function displayCommits() {
         commit.commit.message +
         "</li>"
     )
-    .join("")}` ;
+    .join("")}` ; 
+    commitText += "</ul>"
   document.getElementById("details").innerHTML = commitText ;
 
 }
