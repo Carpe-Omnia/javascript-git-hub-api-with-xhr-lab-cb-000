@@ -1,1 +1,1 @@
-document.getElementById("username")
+document.getElementById("username").addEventListener('change', getRepositories(e))
