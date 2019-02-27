@@ -1,5 +1,5 @@
 var useName ;
-var global ; 
+var global ;
 document.getElementById("username").addEventListener('change', function(e) {
   getRepositories(e) ;
 })
@@ -43,7 +43,7 @@ function getCommits(el) {
 
 function displayCommits() {
   const commits = JSON.parse(this.responseText) ;
-  global = commits[0] ; 
+  global = commits[0] ;
   var commitText = "<ul>" ;
   commitText += `${commits
     .map(
