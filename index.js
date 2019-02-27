@@ -10,3 +10,7 @@ function getRepositories(e) {
   req.open("GET",repoPath) ;
   req.send() ;
 }
+
+function showRepositories(event, data) {
+
+}
