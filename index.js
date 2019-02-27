@@ -8,4 +8,5 @@ function getRepositories(e) {
   const req = new XMLHttpRequest();
   //add the callback trigger here
   req.open("GET",repoPath) ;
+  req.send() ;
 }
