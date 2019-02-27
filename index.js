@@ -79,7 +79,7 @@ function displayBranches() {
     .map(
       branch =>
         "<li>" +
-        branch.name
+        branch.name + 
         "</li>"
     )
     .join("")}` ;
