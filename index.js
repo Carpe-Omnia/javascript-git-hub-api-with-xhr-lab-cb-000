@@ -48,6 +48,7 @@ function displayCommits() {
     .map(
       commit =>
         "<li>" +
+        commit.author.login + " - "
         commit.commit.author.name +
         " - " +
         commit.commit.message +
