@@ -24,7 +24,7 @@ var repoText = "<ul>"
  + "name: " + r.name + "<br>"
  + r.html_url + "<br>"
  + "<a href='#' " + "data-repo='" + r.name + "' " + "onclick='getCommits(this) '>"  + 'commits ' + "</a> " + <br>
- + "<a href='#' " + "data-repo='" + r.name + "' " + "onclick='getBranches(this) '>"  + 'brances ' + "</a> "
+ + "<a href='#' " + "data-repo='" + r.name + "' " + "onclick='getBranches(this) '>"  + 'branches ' + "</a> "
  + "</li> "
 )
 .join("")} `
