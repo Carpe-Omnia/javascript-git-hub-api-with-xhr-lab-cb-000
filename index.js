@@ -27,3 +27,7 @@ var repoText = "<ul>"
 //console.log(repoText)
 document.getElementById("repositories").innerHTML = repoText ;
 }
+
+function displayCommits(thing) {
+  console.log(thing) ;
+}
