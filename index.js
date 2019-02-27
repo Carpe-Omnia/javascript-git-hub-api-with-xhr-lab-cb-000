@@ -19,7 +19,7 @@ var repoText = "<ul>"
  repoText += ` ${repos.map( r => "<li>"
  + "name: " + r.name + "<br>"
  + r.html_url + "<br>"
- + "<a href='#' " + "onclick='displayCommits(this)'>"  + 'commits ' + "</a>"
+ + "<a href='#' " + "onclick='displayCommits(this)'>"  + 'commits ' + "</a> "
  + "</li> "
 )
 .join("")} `
