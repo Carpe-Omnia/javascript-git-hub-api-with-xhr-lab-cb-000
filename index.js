@@ -16,7 +16,7 @@ var repos = JSON.parse(this.responseText);
 var testRepo = repos[0] ;
 console.log(testRepo);
 var repoText = "<ul>"
- repoText += ` ${repos.map( r => "<li>" + "name: " + r.name + "\n" + r.html_url + "</li> "
+ repoText += ` ${repos.map( r => "<li>" + "name: " + r.name + "<br>" + r.html_url + "</li> "
 )
 .join("")} `
  repoText += "</ul>"
