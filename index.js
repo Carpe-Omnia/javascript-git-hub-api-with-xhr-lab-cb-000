@@ -51,7 +51,7 @@ function displayCommits() {
         "<li>" +
         commit.commit.author.name +
         " - " +
-        commit.author.name + " - " +
+        commit.author.id + " - " +
         commit.commit.message +
         "</li>"
     )
