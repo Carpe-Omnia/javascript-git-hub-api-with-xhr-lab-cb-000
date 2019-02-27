@@ -42,5 +42,7 @@ function getCommits(el) {
 
 function displayCommits() {
   const commits = JSON.parse(this.responseText) ;
+  var commitText = "<ul>" ; 
+  
 
 }
