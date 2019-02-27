@@ -15,7 +15,7 @@ function showRepositories(event, data) {
 var repos = JSON.parse(this.responseText);
 var testRepo = repos[0] ;
 console.log(testRepo);
-const repoText = "<ul>"
+var repoText = "<ul>"
  repoText += ` ${repos.map( r => "<li>" + "name: " + r.name + "\n" + r.html_url + "</li> "
 )
 .join("")} `
