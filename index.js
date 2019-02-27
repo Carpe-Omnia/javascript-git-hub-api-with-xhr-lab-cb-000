@@ -14,12 +14,13 @@ function getRepositories(e) {
 function showRepositories(event, data) {
 var repos = JSON.parse(this.responseText);
 var testRepo = repos[0] ;
-console.log(testRepo);
+//console.log(testRepo);
+console.log(repos) ;
 var repoText = "<ul>"
  repoText += ` ${repos.map( r => "<li>"
  + "name: " + r.name + "<br>"
  + r.html_url + "<br>"
- + ' - <a href="#" data-repo="' + r.name + "'" + "onclick='displayCommits(this) '>"  + 'commits ' + "</a> "
+ + "<a href='#' " + "onclick='displayCommits(this) '>"  + 'commits ' + "</a> "
  + "</li> "
 )
 .join("")} `
