@@ -30,5 +30,5 @@ document.getElementById("repositories").innerHTML = repoText ;
 }
 
 function displayCommits(el) {
-  console.log(el.dataset) ;
+  console.log(el.dataset.repo) ;
 }
