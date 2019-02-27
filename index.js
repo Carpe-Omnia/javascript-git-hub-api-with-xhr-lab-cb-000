@@ -53,7 +53,7 @@ function displayCommits() {
         "</li>"
     )
     .join("")}` ; 
-    commitText += "</ul>"
+  commitText += "</ul>"
   document.getElementById("details").innerHTML = commitText ;
 
 }
