@@ -14,5 +14,6 @@ function getRepositories(e) {
 function showRepositories(event, data) {
 // console.log(data) ;
 // console.log(event) ;
-
+var repos = JSON.parse(this.responseText);
+console.log(repos);
 }
