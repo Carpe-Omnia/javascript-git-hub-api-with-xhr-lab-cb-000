@@ -20,7 +20,7 @@ var repoText = "<ul>"
  repoText += ` ${repos.map( r => "<li>"
  + "name: " + r.name + "<br>"
  + r.html_url + "<br>"
- + "<a href='#' " + "data-repo='" + r.name + "' " + "onclick='displayCommits(this) '>"  + 'commits ' + "</a> "
+ + "<a href='#' " + "data-repo='" + r.name + "' " + "onclick='getCommits(this) '>"  + 'commits ' + "</a> "
  + "</li> "
 )
 .join("")} `
@@ -29,6 +29,9 @@ var repoText = "<ul>"
 document.getElementById("repositories").innerHTML = repoText ;
 }
 
-function displayCommits(el) {
+function getCommits(el) {
   console.log(el.dataset.repo) ;
+  const name = el.dataset.repo ;
+  const req = new XMLHttpRequest() ;
+  req.addEventListener("load", displayCommits) ;
 }
