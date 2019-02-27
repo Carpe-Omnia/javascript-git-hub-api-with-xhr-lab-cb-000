@@ -1,4 +1,4 @@
-var useName ; 
+var useName ;
 document.getElementById("username").addEventListener('change', function(e) {
   getRepositories(e) ;
 })
