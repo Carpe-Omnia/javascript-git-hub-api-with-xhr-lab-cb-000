@@ -16,5 +16,6 @@ var repos = JSON.parse(this.responseText);
 var testRepo = repos[0] ;
 console.log(testRepo);
 const repoText = "<ul> " + "<li>" + "name: " + testRepo.name + "\n" + testRepo.html_url + "</li> " + "</ul>"
-console.log(repoText)
+//console.log(repoText)
+document.getElementById("repositories").innerHTML = repoText ;
 }
