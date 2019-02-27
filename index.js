@@ -61,3 +61,32 @@ function displayCommits() {
   document.getElementById("details").innerHTML = commitText ;
 
 }
+
+function getBranches(el) {
+  console.log(el.dataset.repo) ;
+  const name = el.dataset.repo ;
+  const req = new XMLHttpRequest() ;
+  req.addEventListener("load", displayCommits) ;
+  req.open("GET", "https://api.github.com/repos/" + useName + "/" + name + "/branches");
+  req.send();
+}
+
+function displayBranches() {
+  const branches = JSON.parse(this.responseText) ;
+  global = branches[0] ;
+  var commitText = "<ul>" ;
+  commitText += `${branches
+    .map(
+      branch =>
+        "<li>" +
+        commit.commit.author.name +
+        " - " +
+        commit.author.login  + " - " +
+        commit.commit.message +
+        "</li>"
+    )
+    .join("")}` ;
+  commitText += "</ul>"
+  document.getElementById("details").innerHTML = commitText ;
+
+}
